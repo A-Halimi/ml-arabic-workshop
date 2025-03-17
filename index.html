@@ -4,187 +4,323 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tools Workshop Series</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #e0f2fe, #ede9fe);
+        }
+        .card {
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        [dir="rtl"] {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .banner-img {
+            transition: all 0.5s ease;
+            height: 300px; /* Fixed height for both images */
+            width: 100%;
+            object-fit: cover; /* Ensures images maintain aspect ratio */
+        }
+        .btn-register {
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+        }
+        .btn-register:hover {
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+            transform: translateY(-2px);
+        }
+        .btn-livestream {
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #4f46e5, #7c3aed);
+        }
+        .btn-livestream:hover {
+            box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-700">
+<body class="bg-slate-50 text-slate-800">
 
-    <!-- Header Section -->
-    <div class="text-center py-6">
-        <h1 class="text-3xl font-bold">سلسلة ورشة عمل أدوات وتقنيات الذكاء الاصطناعي التطبيقية ~ مقدمة في التعلم الآلي</h1>
-        <p class="text-xl">الاثنين 14 أبريل 2025، 2 مساءً - 4 مساءً</p>
-        <p class="text-md"> YOUTUBE جلسة بث مباشر على </p>
+    <!-- Hero Section with Gradient Background -->
+    <div class="gradient-bg py-12 px-4 shadow-md">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-indigo-900 mb-4" dir="rtl">سلسلة ورشة عمل أدوات وتقنيات الذكاء الاصطناعي التطبيقية</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-indigo-700 mb-6" dir="rtl">~ مقدمة في التعلم الآلي ~</h2>
+                <div class="flex items-center justify-center space-x-2 mb-3">
+                    <i class="far fa-calendar-alt text-indigo-600 text-xl"></i>
+                    <p class="text-xl text-indigo-600 font-medium" dir="rtl">الاثنين 14 أبريل 2025، 2 مساءً - 4 مساءً</p>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="fab fa-youtube text-red-600 text-xl"></i>
+                    <p class="text-lg text-indigo-600" dir="rtl">جلسة بث مباشر على YOUTUBE</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="flex justify-center mx-auto">
-        <div class="flex space-x-5">
-          <!-- Date Card -->
-          <div class="flex items-center space-x-2 p-4 bg-blue-100 rounded-lg shadow-md">
-            <div class="text-teal-500">
-              <!-- Place calendar icon here -->
-            </div>
-            <div>
-              <h3 class="font-bold text-lg">Date</h3>
-              <ul>
-                <li>Monday April 14, 2025</li>
-                <li>2pm - 4pm</li>
-              </ul>
-            </div>
-          </div>
-      
-          <!-- Venue Card -->
-          <div class="flex items-center space-x-2 p-4 bg-blue-100 rounded-lg shadow-md">
-            <div class="text-blue-500">
-              <!-- Place location icon here -->
-            </div>
-            <div>
-              <h3 class="font-bold text-lg">Venue</h3>
-              <p>YOUTUBE LIVE Session</p>
-              <a href="https://www.youtube.com/watch?v=DlF_5s7PvxQI" class="text-blue-500 hover:underline">Link Here!</a>
-            </div>
-          </div>
-      
-          <!-- Organizer Card -->
-          <div class="flex items-center space-x-2 p-4 bg-blue-100 rounded-lg shadow-md">
-            <div class="text-green-500">
-              <!-- Place person icon here -->
-            </div>
-            <div>
-              <h3 class="font-bold text-lg">Organizer</h3>
-              <p>Abdelghafour HALIMI</p>
-              <p>Visualization Core Laboratory</p>
-              <a href="mailto:abdelghafour.halimi@kaust.edu.sa" class="text-blue-500 hover:underline">abdelghafour.halimi@kaust.edu.sa</a>
-            </div>
-          </div>
-      
-          <!-- Register Card -->
-          <div class="flex items-center space-x-2 p-4 bg-blue-100 rounded-lg shadow-md">
-            <div class="text-purple-500">
-              <!-- Place registration icon here -->
-            </div>
-            <div>
-              <h3 class="font-bold text-lg">Register</h3>
-              <a href="https://kaustforms.formstack.com/forms/a_i_workshop_series_introduction_machine_learning_2025_arabic_version_copy" class="text-blue-500 hover:underline">Register Here!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
     <!-- Banner Section -->
-    <div class="flex justify-center space-x-2 py-4">
-        <img src="kvl.png" alt="Workshop Series Banner" width="500" height="200" class="rounded-lg shadow-xl"/>
-        <img src="Machine LEARNING_arabic_thumbnail.png" alt="Workshop Series Banner" width="500" height="200" class="rounded-lg shadow-xl"/>
+    <div class="container mx-auto max-w-6xl px-4 -mt-6">
+        <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
+            <div class="overflow-hidden rounded-xl shadow-xl w-full md:w-1/2">
+                <img src="kvl.png" alt="Workshop Series Banner" class="banner-img rounded-xl transform hover:scale-105 transition-all duration-500" />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-xl w-full md:w-1/2">
+                <img src="Machine LEARNING_arabic_thumbnail.png" alt="Machine Learning Workshop Banner" class="banner-img rounded-xl transform hover:scale-105 transition-all duration-500" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Information Cards -->
+    <div class="container mx-auto max-w-6xl px-4 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Date Card -->
+            <div class="card bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500">
+                <div class="flex items-start mb-3">
+                    <i class="far fa-calendar-check text-3xl text-blue-500 mr-3"></i>
+                    <h3 class="font-bold text-xl text-blue-800">Date & Time</h3>
+                </div>
+                <ul class="text-slate-700 space-y-2">
+                    <li class="flex items-center"><i class="far fa-calendar-alt text-blue-400 mr-2"></i> Monday April 14, 2025</li>
+                    <li class="flex items-center"><i class="far fa-clock text-blue-400 mr-2"></i> 2:00 PM - 4:00 PM</li>
+                </ul>
+            </div>
+      
+            <!-- Venue Card -->
+            <div class="card bg-white p-6 rounded-xl shadow-md border-l-4 border-indigo-500">
+                <div class="flex items-start mb-3">
+                    <i class="fas fa-video text-3xl text-indigo-500 mr-3"></i>
+                    <h3 class="font-bold text-xl text-indigo-800">Venue</h3>
+                </div>
+                <p class="text-slate-700 mb-3">YOUTUBE LIVE Session</p>
+                <div class="mt-auto pt-1">
+                    <a href="https://www.youtube.com/watch?v=DlF_5s7PvxQI" 
+                       class="btn-livestream flex items-center justify-center text-white py-2 px-4 rounded-lg font-medium w-full">
+                        <i class="fas fa-play-circle mr-2"></i> Join Livestream
+                    </a>
+                </div>
+            </div>
+      
+            <!-- Organizer Card -->
+            <div class="card bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500">
+                <div class="flex items-start mb-3">
+                    <i class="fas fa-user-tie text-3xl text-green-500 mr-3"></i>
+                    <h3 class="font-bold text-xl text-green-800">Organizer</h3>
+                </div>
+                <p class="text-slate-700">Dr. Abdelghafour HALIMI</p>
+                <p class="text-slate-600 text-sm mb-2">Visualization Core Laboratory</p>
+                <a href="mailto:abdelghafour.halimi@kaust.edu.sa" class="flex items-center text-green-600 hover:text-green-800 font-medium transition-colors">
+                    <i class="fas fa-envelope mr-2"></i> Contact
+                </a>
+            </div>
+      
+            <!-- Register Card -->
+            <div class="card bg-white p-6 rounded-xl shadow-md border-l-4 border-purple-500">
+                <div class="flex items-start mb-3">
+                    <i class="fas fa-user-plus text-3xl text-purple-500 mr-3"></i>
+                    <h3 class="font-bold text-xl text-purple-800">Register</h3>
+                </div>
+                <p class="text-slate-700 mb-3">Secure your spot for this workshop</p>
+                <a href="https://kaustforms.formstack.com/forms/a_i_workshop_series_introduction_machine_learning_2025_arabic_version_copy" 
+                   class="btn-register flex items-center justify-center text-white py-2 px-4 rounded-lg font-medium">
+                    <i class="fas fa-sign-in-alt mr-2"></i> Register Now
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- Workshop Materials -->
-    <!-- Workshop Materials Card -->
-    <div class="flex justify-center mx-auto">
-        <div class="flex items-center space-x-2 p-4 bg-green-200 rounded-lg shadow-md">
-            <div class="text-purple-500">
-            <!-- Place registration icon here -->
-            </div>
-            <div>
-            <h3 class="font-bold text-lg">Workshop Materials مواد ورشة العمل            </h3>
-            <div class="text-center py-2">
-                <a href="https://github.com/A-Halimi/Introduction-to-AI-workshop-series/tree/main" class="text-blue-500 hover:underline">GitHub Repository</a>
-            </div>
+    <div class="container mx-auto max-w-6xl px-4 py-4">
+        <div class="card bg-gradient-to-r from-emerald-100 to-teal-100 p-6 rounded-xl shadow-md">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <i class="fas fa-book-open text-4xl text-emerald-600"></i>
+                <div class="text-center md:text-left">
+                    <h3 class="font-bold text-xl text-emerald-800 mb-2">Workshop Materials <span dir="rtl">مواد ورشة العمل</span></h3>
+                    <p class="text-slate-700 mb-3">Access all workshop resources and materials on GitHub</p>
+                </div>
+                <a href="https://github.com/A-Halimi/Introduction-to-AI-workshop-series/tree/main" 
+                   class="flex items-center bg-white py-2 px-6 rounded-lg shadow text-emerald-700 hover:bg-emerald-50 transition-colors">
+                    <i class="fab fa-github text-xl mr-2"></i> GitHub Repository
+                </a>
             </div>
         </div>
     </div>
 
-
-  
-
-<!-- حاوية البطاقات -->
-<div dir="rtl">
-    <div class="flex justify-center mx-auto">
-        <div class="flex justify-around items-start p-6 bg-gray-100">
-            <!-- بطاقة المتطلبات المسبقة -->
-            <div class="p-14 w-1/1 ml-2 bg-green-200 rounded-lg shadow">
-            <h3 class="font-bold text-lg mb-3">المتطلبات المسبقة Pre-requisites </h3>
-            <ul class="list-disc list-inside">
-                <li class="mb-2">كمبيوتر (لينكس/ويندوز/ماك) مع اتصال بالإنترنت ونافذة الأوامر</li>
-                <li class="mb-2">معرفة أساسية بلغة البرمجة بايثون ضرورية (مكتبات Pandas, Numpy...)</li>
-                <li class="mb-2">وجود خبرة مسبقة بالعمل مع مدير حزم Conda</li>
-            </ul>
+    <!-- Content Sections -->
+    <div class="container mx-auto max-w-6xl px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Prerequisites Card -->
+            <div dir="rtl" class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-clipboard-list text-3xl text-blue-500 ml-3"></i>
+                    <h3 class="font-bold text-2xl">المتطلبات المسبقة <span class="text-blue-500">Pre-requisites</span></h3>
+                </div>
+                <ul class="space-y-3 text-slate-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 ml-2"></i>
+                        <span>كمبيوتر (لينكس/ويندوز/ماك) مع اتصال بالإنترنت ونافذة الأوامر</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 ml-2"></i>
+                        <span>معرفة أساسية بلغة البرمجة بايثون ضرورية (مكتبات Pandas, Numpy...)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 ml-2"></i>
+                        <span>وجود خبرة مسبقة بالعمل مع مدير حزم Conda</span>
+                    </li>
+                </ul>
             </div>
         
-            <!-- بطاقة جدول الأعمال -->
-            <div class="p-5 w-1/1 ml-2 bg-green-200 rounded-lg shadow">
-            <h3 class="font-bold text-lg mb-3">  جدول الأعمال Agenda</h3>
-            <table class="min-w-full">
-                <thead>
-                    <tr>
-                        <th class="px-4 py-2"> الوقت Time</th>
-                        <th class="px-4 py-2"> الموضوع Topic</th>
-                        <th class="px-4 py-2"> المتحدث Speaker</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="px-2 py-1">2:00pm - 2:10pm</td>
-                    <td class="px-2 py-1">الترحيب</td>
-                    <td class="px-2 py-1">عبد الغفور حليمي</td>
-                </tr>
-                <tr>
-                    <td class="px-2 py-1">2:10pm - 2:30pm</td>
-                    <td class="px-2 py-1">مقدمة في التعلم الآلي</td>
-                    <td class="px-2 py-1">عبد الغفور حليمي</td>
-                </tr>
-                <tr>
-                    <td class="px-2 py-1">2:30pm - 2:40pm</td>
-                    <td class="px-2 py-1">استراحة</td>
-                    <td class="px-2 py-1">-</td>
-                </tr>
-                <tr>
-                    <td class="px-2 py-1">2:40pm - 4:00pm</td>
-                    <td class="px-2 py-1">جلسة عملية: أمثلة على دفاتر Jupyter </td>
-                    <td class="px-2 py-1">عبد الغفور حليمي</td>
-                </tr>
-                </tbody>
-            </table>
+            <!-- Agenda Card -->
+            <div dir="rtl" class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-indigo-500">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-calendar-day text-3xl text-indigo-500 ml-3"></i>
+                    <h3 class="font-bold text-2xl">جدول الأعمال <span class="text-indigo-500">Agenda</span></h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                        <thead class="bg-indigo-100 text-indigo-800">
+                            <tr>
+                                <th class="px-4 py-3 text-right">الوقت <span class="text-indigo-500">Time</span></th>
+                                <th class="px-4 py-3 text-right">الموضوع <span class="text-indigo-500">Topic</span></th>
+                                <th class="px-4 py-3 text-right">المتحدث <span class="text-indigo-500">Speaker</span></th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-indigo-100">
+                            <tr class="hover:bg-indigo-50 transition-colors">
+                                <td class="px-4 py-3 text-slate-700">2:00pm - 2:10pm</td>
+                                <td class="px-4 py-3 text-slate-700">الترحيب</td>
+                                <td class="px-4 py-3 text-slate-700">عبد الغفور حليمي</td>
+                            </tr>
+                            <tr class="hover:bg-indigo-50 transition-colors">
+                                <td class="px-4 py-3 text-slate-700">2:10pm - 2:30pm</td>
+                                <td class="px-4 py-3 text-slate-700">مقدمة في التعلم الآلي</td>
+                                <td class="px-4 py-3 text-slate-700">عبد الغفور حليمي</td>
+                            </tr>
+                            <tr class="hover:bg-indigo-50 transition-colors">
+                                <td class="px-4 py-3 text-slate-700">2:30pm - 2:40pm</td>
+                                <td class="px-4 py-3 text-slate-700">استراحة</td>
+                                <td class="px-4 py-3 text-slate-700">-</td>
+                            </tr>
+                            <tr class="hover:bg-indigo-50 transition-colors">
+                                <td class="px-4 py-3 text-slate-700">2:40pm - 4:00pm</td>
+                                <td class="px-4 py-3 text-slate-700">جلسة عملية: أمثلة على دفاتر Jupyter</td>
+                                <td class="px-4 py-3 text-slate-700">عبد الغفور حليمي</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            
         </div>
     </div>
-</div>
 
-
-
-
-<!-- Main Container -->
-<div class="flex justify-center mx-auto">
-    <div class="p-6 bg-gray-100">
-
-        <!-- Overview Card -->
-        <div class="p-4 mb-4 bg-indigo-300 rounded-lg shadow-md" dir="rtl">
-        <h2 class="text-2xl font-bold mb-4 "> نظرة عامة      Overview</h2>
-        <p>تُعد ورشة العمل هذه بمثابة مقدمة لعالم التعلم الآلي المثير للاهتمام، وهو مجال فرعي للذكاء الاصطناعي. سيكتسب المشاركون فهماً أساسياً للمفاهيم والتقنيات والتطبيقات الأساسية للتعلم الآلي</p>
-        <p>بالاستفادة من أحدث مرافق مختبر جامعة الملك عبد الله للعلوم والتقنية الأساسية للتصور، سيحظى الحضور بتجربة غامرة تجمع بين الدروس النظرية والتمارين العملية</p>
-        <p>هذه الورشة مثالية لمن يتطلعون إلى بدء رحلة في عالم الذكاء الاصطناعي والتعلم الآلي، وكذلك للمحترفين الذين يسعون إلى تعزيز معرفتهم في هذا المجال الذي يتطور بسرعة</p>
-        <!-- More content -->
+    <!-- Overview Section -->
+    <div class="container mx-auto max-w-6xl px-4 py-8">
+        <div dir="rtl" class="card bg-gradient-to-r from-indigo-50 to-purple-50 p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-lightbulb text-4xl text-indigo-600 ml-4"></i>
+                <h2 class="text-3xl font-bold text-indigo-900">نظرة عامة <span class="text-indigo-600">Overview</span></h2>
+            </div>
+            <div class="space-y-4 text-slate-700 leading-relaxed">
+                <p class="flex items-start">
+                    <i class="fas fa-angle-double-left text-indigo-500 mt-1 ml-2"></i>
+                    <span>تُعد ورشة العمل هذه بمثابة مقدمة لعالم التعلم الآلي المثير للاهتمام، وهو مجال فرعي للذكاء الاصطناعي. سيكتسب المشاركون فهماً أساسياً للمفاهيم والتقنيات والتطبيقات الأساسية للتعلم الآلي</span>
+                </p>
+                <p class="flex items-start">
+                    <i class="fas fa-angle-double-left text-indigo-500 mt-1 ml-2"></i>
+                    <span>بالاستفادة من أحدث مرافق مختبر جامعة الملك عبد الله للعلوم والتقنية الأساسية للتصور، سيحظى الحضور بتجربة غامرة تجمع بين الدروس النظرية والتمارين العملية</span>
+                </p>
+                <p class="flex items-start">
+                    <i class="fas fa-angle-double-left text-indigo-500 mt-1 ml-2"></i>
+                    <span>هذه الورشة مثالية لمن يتطلعون إلى بدء رحلة في عالم الذكاء الاصطناعي والتعلم الآلي، وكذلك للمحترفين الذين يسعون إلى تعزيز معرفتهم في هذا المجال الذي يتطور بسرعة</span>
+                </p>
+            </div>
         </div>
-    
-        <!-- Who Should Attend Card -->
-        <div class="p-4 bg-indigo-300 rounded-lg shadow-md" dir="rtl">
-        <h2 class="text-2xl font-bold mb-4">من يجب أن يحضر؟   ?Who Should Attend</h2>
-        <ul class="list-disc list-inside">
-            <li> أي شخص ليس لديه أي خبرة (أو مبتدئ) ويرغب في تعلم التعلم الآلي وعلوم البيانات (Machine Learning, Data Science)</li>
-            <li>أنت مبرمج ترغب في توسيع نطاق مهاراتك في علوم البيانات والتعلم الآلي لتجعل نفسك أكثر قيمة</li>
-            <li>أي شخص يريد أن يتعلم هذه الموضوعات من خبراء في هذا المجال لا يكتفون بالتدريس فقط، بل عملوا بالفعل في هذا المجال</li>
-            <li>أنت ترغب في إضافة قيمة إلى عملك الخاص أو الشركة التي تعمل بها، وذلك باستخدام أدوات تعلُّم الآلة القوية</li>
-            <!-- More list items -->
-        </ul>
-        </div>
-    
     </div>
-</div>
-  
 
+    <!-- Who Should Attend Section -->
+    <div class="container mx-auto max-w-6xl px-4 py-8 mb-12">
+        <div dir="rtl" class="card bg-gradient-to-r from-purple-50 to-indigo-50 p-8 rounded-xl shadow-md">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-users text-4xl text-purple-600 ml-4"></i>
+                <h2 class="text-3xl font-bold text-purple-900">من يجب أن يحضر؟ <span class="text-purple-600">Who Should Attend?</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="flex items-start">
+                        <i class="fas fa-user-graduate text-purple-500 text-xl mt-1 ml-3"></i>
+                        <p class="text-slate-700">أي شخص ليس لديه أي خبرة (أو مبتدئ) ويرغب في تعلم التعلم الآلي وعلوم البيانات (Machine Learning, Data Science)</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="flex items-start">
+                        <i class="fas fa-code text-purple-500 text-xl mt-1 ml-3"></i>
+                        <p class="text-slate-700">أنت مبرمج ترغب في توسيع نطاق مهاراتك في علوم البيانات والتعلم الآلي لتجعل نفسك أكثر قيمة</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="flex items-start">
+                        <i class="fas fa-chalkboard-teacher text-purple-500 text-xl mt-1 ml-3"></i>
+                        <p class="text-slate-700">أي شخص يريد أن يتعلم هذه الموضوعات من خبراء في هذا المجال لا يكتفون بالتدريس فقط، بل عملوا بالفعل في هذا المجال</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <div class="flex items-start">
+                        <i class="fas fa-briefcase text-purple-500 text-xl mt-1 ml-3"></i>
+                        <p class="text-slate-700">أنت ترغب في إضافة قيمة إلى عملك الخاص أو الشركة التي تعمل بها، وذلك باستخدام أدوات تعلُّم الآلة القوية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8">
+        <div class="container mx-auto max-w-6xl px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">AI Tools Workshop Series</h3>
+                    <p class="text-slate-300">Empowering Knowledge in AI and Machine Learning</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-blue-400 transition-colors">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdelghafour-halimi/" class="text-white hover:text-blue-600 transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/A-Halimi/Introduction-to-AI-workshop-series/tree/main" class="text-white hover:text-gray-400 transition-colors">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@kaustvislab/videos" class="text-white hover:text-red-500 transition-colors">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-6 text-slate-400 text-sm">
+                <p>© 2025 Dr. Abdelghafour HALIMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
- 
+    <!-- Scroll to top button -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+            class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-colors">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
 </body>
 </html>
